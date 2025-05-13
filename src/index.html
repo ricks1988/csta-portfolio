@@ -1,5 +1,199 @@
-<center>
-<img src="new.png" width="100%"/>
-<br/>
-<img src="ceu_codecamp.jpg"/>
-</center>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ricks Ayoon | Computer Enthusiast | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #000000;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    nav a:hover {
+      color: #47f7df;
+      transform: scale(1.1);
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .project {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    }
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .skills span {
+      background: #47f7df;
+      padding: 0.4em 0.8em;
+      margin: 0.2em;
+      border-radius: 5px;
+      display: inline-block;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+    .skills span:hover {
+      background: #333;
+      color: white;
+      transform: scale(1.1);
+    }
+    #profile-img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-right: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    #profile-img:hover {
+      transform: scale(1.1);  /* Enlarges the image slightly */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Adds a shadow for a floating effect */
+    }
+    .about-content {
+      display: flex;
+      align-items: center;
+    }
+
+    /* Fullscreen modal style */
+    #modal {
+      display: none; /* Hidden by default */
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+
+    #modal img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+
+    /* Close button style */
+    .close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #fff;
+      color: #000;
+      border: none;
+      border-radius: 50%;
+      font-size: 20px;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Ricks Ayoon</h1>
+  <p>Computer Enthusiast | Hardware Specialist | Builder | Tech Explorer</p>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="about-content">
+    <!-- Make the image clickable to trigger full-screen view -->
+    <img id="profile-img" src="IMG_20250507_232053_256.jpg" alt="Ricks Ayoon Profile Picture" onclick="openModal()">
+    <p>Hi, I'm Ricks Ayoon, a passionate computer enthusiast with a deep love for hardware. I'm currently an Information Technology student, constantly exploring the world of computer components, assembling builds, and learning more about the technology that powers our devices. I’m particularly interested in understanding the intricacies of processors, graphics cards, motherboards, and other crucial components that make up a computer. Outside of my studies, I enjoy watching tech content creators who specialize in reviewing and breaking down the latest hardware trends. My goal is to connect with like-minded individuals who share a passion for hardware, and to keep pushing the boundaries of what I can build and learn in the world of computers.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="project">
+    <h3>Custom PC Build</h3>
+    <p>Built a custom PC for gaming and content creation. Components included a high-end GPU, CPU, and liquid cooling system for optimal performance. This project gave me hands-on experience with compatibility, troubleshooting, and system optimization.</p>
+  </div>
+  <div class="project">
+    <h3>Tech Bench Setup</h3>
+    <p>Created a dedicated tech bench setup for hardware testing and troubleshooting. This project focused on creating an efficient and organized space to test various computer parts and troubleshoot issues in custom builds.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>PC Building</span>
+    <span>Hardware Troubleshooting</span>
+    <span>System Optimization</span>
+    <span>Component Compatibility</span>
+    <span>Hardware Reviews</span>
+    <span>Overclocking</span>
+    <span>Linux Setup</span>
+    <span>Windows Setup & Customization</span>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: ricksayoon6@gmail.com</p>
+  <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+  <p>GitHub: <a href="https://github.com/" target="_blank">github.com/ricks1988</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Ricks Ayoon. All rights reserved.</p>
+</footer>
+
+<!-- Fullscreen modal -->
+<div id="modal" onclick="closeModal()">
+  <img id="modal-img" src="IMG_20250507_232053_256.jpg" alt="Profile Full Screen">
+  <button class="close-btn" onclick="closeModal()">X</button>
+</div>
+
+<script>
+  // Function to open the modal
+  function openModal() {
+    document.getElementById('modal').style.display = 'flex';
+  }
+
+  // Function to close the modal
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+</script>
+
+</body>
+</html>

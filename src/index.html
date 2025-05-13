@@ -74,17 +74,16 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     #profile-img:hover {
-      transform: scale(1.1);  /* Enlarges the image slightly */
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);  /* Adds a shadow for a floating effect */
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
     .about-content {
       display: flex;
       align-items: center;
     }
 
-    /* Fullscreen modal style */
     #modal {
-      display: none; /* Hidden by default */
+      display: none;
       position: fixed;
       z-index: 1000;
       left: 0;
@@ -102,7 +101,6 @@
       object-fit: contain;
     }
 
-    /* Close button style */
     .close-btn {
       position: absolute;
       top: 20px;
@@ -134,7 +132,6 @@
 <section id="about">
   <h2>About Me</h2>
   <div class="about-content">
-    <!-- Make the image clickable to trigger full-screen view -->
     <img id="profile-img" src="IMG_20250507_232053_256.jpg" alt="Ricks Ayoon Profile Picture" onclick="openModal()">
     <p>Hi, I'm Ricks Ayoon, a passionate computer enthusiast with a deep love for hardware. I'm currently an Information Technology student, constantly exploring the world of computer components, assembling builds, and learning more about the technology that powers our devices. I’m particularly interested in understanding the intricacies of processors, graphics cards, motherboards, and other crucial components that make up a computer. Outside of my studies, I enjoy watching tech content creators who specialize in reviewing and breaking down the latest hardware trends. My goal is to connect with like-minded individuals who share a passion for hardware, and to keep pushing the boundaries of what I can build and learn in the world of computers.</p>
   </div>
@@ -170,26 +167,23 @@
   <h2>Contact</h2>
   <p>Email: ricksayoon6@gmail.com</p>
   <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-  <p>GitHub: <a href="https://github.com/" target="_blank">github.com/ricks1988</a></p>
+  <p>GitHub: <a href="https://github.com/ricks1988/csta-portfolio" target="_blank">github.com/ricks1988</a></p>
 </section>
 
 <footer>
   <p>© 2025 Ricks Ayoon. All rights reserved.</p>
 </footer>
 
-<!-- Fullscreen modal -->
 <div id="modal" onclick="closeModal()">
   <img id="modal-img" src="IMG_20250507_232053_256.jpg" alt="Profile Full Screen">
   <button class="close-btn" onclick="closeModal()">X</button>
 </div>
 
 <script>
-  // Function to open the modal
   function openModal() {
     document.getElementById('modal').style.display = 'flex';
   }
 
-  // Function to close the modal
   function closeModal() {
     document.getElementById('modal').style.display = 'none';
   }
